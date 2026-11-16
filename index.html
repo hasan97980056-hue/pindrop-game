@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>PinDrop: Cyber-Core Edition - HASAN AI GAME STUDIO X</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="hud-overlay">
+            <div class="hud-card score-box">SCORE: <span id="scoreVal">0</span></div>
+            <div class="hud-card fever-box">FEVER: <span id="feverVal">0%</span></div>
+            <div class="hud-card pins-box">PINS: <span id="pinsVal">5</span></div>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+        <div id="neural-revive-modal" class="modal hidden">
+            <div class="modal-content cyber-border">
+                <h2>CRITICAL SYSTEM FAILURE</h2>
+                <p>Grid breach imminent. Initiate Neural Revive?</p>
+                <button id="reviveBtn" class="cyber-btn">WATCH AD (+5 PINS & CLEANSE)</button>
+                <button id="giveUpBtn" class="cyber-btn-secondary">ACCEPT GAME OVER</button>
+            </div>
+        </div>
+        <div id="admob-banner-slot">
+            <span class="banner-placeholder">[ AdMob Cyber-Banner 320x50 ]</span>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
